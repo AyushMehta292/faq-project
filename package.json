@@ -12,7 +12,10 @@
   "author": "Ayush",
   "license": "MIT",
   "dependencies": {
+    "@adminjs/express": "^5.1.0",
+    "@adminjs/mongoose": "^3.0.0",
     "@vitalets/google-translate-api": "^8.0.0",
+    "adminjs": "^6.0.0",
     "body-parser": "^1.20.2",
     "dotenv": "^16.4.7",
     "express": "^4.18.2",
