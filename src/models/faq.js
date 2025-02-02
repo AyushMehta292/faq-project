@@ -3,14 +3,14 @@ const { translateText } = require('../services/translationService');
 
 const FAQSchema = new mongoose.Schema({
   question: { type: String, required: true },
-  answer: { type: String, required: true },
+  answer: { type: String, required: true }, // Can store HTML content (from a WYSIWYG editor)
   question_hi: { type: String, default: '' },
   question_bn: { type: String, default: '' },
   answer_hi: { type: String, default: '' },
   answer_bn: { type: String, default: '' },
   created_at: { type: Date, default: Date.now }
 });
-
+ 
 FAQSchema.methods.getTranslation = function (lang) {
   if (lang === 'hi') {
     return {

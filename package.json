@@ -2,22 +2,25 @@
   "name": "faq-project",
   "version": "1.0.0",
   "description": "FAQ management API with multilingual support, caching, and admin panel",
-  "main": "src/index.js",
+  "main": "src/app.js",
   "scripts": {
     "start": "node src/app.js",
     "dev": "nodemon src/app.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest --coverage"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Ayush",
+  "license": "MIT",
   "dependencies": {
+    "@vitalets/google-translate-api": "^8.0.0",
     "body-parser": "^1.20.2",
     "dotenv": "^16.4.7",
     "express": "^4.18.2",
-    "mongoose": "^7.0.0"
+    "mongoose": "^7.0.0",
+    "redis": "^4.6.7"
   },
   "devDependencies": {
+    "jest": "^29.5.0",
     "nodemon": "^2.0.22"
   }
 }

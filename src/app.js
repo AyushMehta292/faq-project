@@ -1,6 +1,8 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const connectDB = require('./config/db');
+const faqRoutes = require('./routes/faq');
+
 require('dotenv').config();
 
 const app = express();
@@ -12,6 +14,9 @@ connectDB();
 // Middleware
 app.use(express.json());
 app.use(bodyParser.urlencoded({ extended: false }));
+
+// API Routes
+app.use('/api', faqRoutes);
 
 // Root endpoint
 app.get('/', (req, res) => {
