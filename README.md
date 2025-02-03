@@ -118,6 +118,7 @@ Access the API at [http://localhost:3000/api/faqs](http://localhost:3000/api/faq
    - **API Endpoints:** [http://localhost:3000/api/faqs](http://localhost:3000/api/faqs)
    - **Admin Panel:** [http://localhost:3000/admin](http://localhost:3000/admin)
 
+   NOTE: Command to pull the docker image. [docker pull ayushmehta292/faq-project:0.0.1.RELEASE] [GO TO Docker](https://hub.docker.com/r/ayushmehta292/faq-project)
 ---
 
 ## ⚙️ API Endpoints
